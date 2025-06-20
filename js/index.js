@@ -33,13 +33,13 @@ class RPSGame {
 
     increaseCPUWins() {
         this.cpuWins++;
-        const winText = document.getElementById("cpuWins");
+        const winText = document.getElementById("cpu-win-cnt");
         winText.innerText = "" + this.cpuWins;
     }
 
     increasePlayerWins() {
         this.playerWins++;
-        const winText = document.getElementById("playerWins");
+        const winText = document.getElementById("player-win-cnt");
         winText.innerText = "" + this.playerWins;
     }
 
