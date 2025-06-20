@@ -1,0 +1,51 @@
+:root {
+    --midnightBlue: #134DA0;
+    --darkBlue: #0C2D48;
+    --blue: #2E8BC0;
+    --babyBlue: #B1D4E0
+}
+
+* {
+    padding: 0;
+    margin: 0;
+
+    color: var(--babyBlue);
+    box-sizing: border-box;
+}
+body {
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    background-color: var(--midnightBlue);
+
+}
+.win-row {
+    display: flex;
+    justify-content: space-evenly;
+}
+.player-wins, .cpu-wins {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buttons {
+    display: flex;
+    background-color: transparent;
+    justify-content: center;
+    gap: 40px;
+}
+button {
+    border: 0;
+    background-color: transparent;
+}
+.active-hands {
+    display: flex;
+    justify-content: space-around;
+    border: 8px solid red;
+}
+canvas {
+    border: 8px solid orange;
+}
