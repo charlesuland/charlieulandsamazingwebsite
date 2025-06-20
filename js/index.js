@@ -51,18 +51,12 @@ class RPSGame {
 
 
 
-const canvas = document.getElementById("canvas");
+const canvas = document.getElementById("player-hand");
 const ctx = canvas.getContext("2d");
 const buttonRock = document.getElementById("button1");
 const buttonPaper = document.getElementById("button2");
 const buttonScissors = document.getElementById("button3");
 const game = new RPSGame();
-buttonRock.onclick = () => {
-    game.weaponClicked(1);
-}
-buttonPaper.onclick = () => {
-    game.weaponClicked(2);
-}
-buttonScissors.onclick = () => {
-    game.weaponClicked(3);
-}
+buttonRock.onclick = () => game.weaponClicked(1);
+buttonPaper.onclick = () => game.weaponClicked(2);
+buttonScissors.onclick = () => game.weaponClicked(3);
