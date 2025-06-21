@@ -44,8 +44,4 @@ button {
 .active-hands {
     display: flex;
     justify-content: space-around;
-    border: 8px solid red;
-}
-canvas {
-    border: 8px solid orange;
 }
